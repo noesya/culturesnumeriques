@@ -1,0 +1,30 @@
+title: Jekyll Starter
+locale: fr
+
+exclude:
+  - README.md
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+
+collections:
+  pages:
+    output: true
+
+sass:
+    style: compressed
+
+jekyll-minifier:
+  remove_spaces_inside_tags: true
+  remove_multi_spaces: true
+  remove_intertag_spaces: true
+  remove_comments: true
+  compress_css: false
+  compress_javascript: true
+
+picture:
+  ignore_missing_images: true
