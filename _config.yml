@@ -1,5 +1,5 @@
 title: Jekyll Starter
-locale: fr
+lang: fr
 
 exclude:
   - README.md
@@ -14,6 +14,10 @@ defaults:
 collections:
   pages:
     output: true
+
+plugins:
+  - jekyll-minifier
+  - jekyll-sitemap
 
 sass:
     style: compressed
