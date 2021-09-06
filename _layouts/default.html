@@ -8,9 +8,13 @@
 
     <!-- Preload -->
     <link rel="preload" href="/assets/css/main.css" as="style">
+    <link rel="preload" href="/assets/js/js.cookie-2.2.1.min.js" as="script">
+    <link rel="preload" href="/assets/js/main.js" as="script">
 
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/main.css">
+
+    <script src="/assets/js/js.cookie-2.2.1.min.js"></script>
   </head>
   <body>
     {% include header.html %}
@@ -19,5 +23,6 @@
     </main>
     {% include footer.html %}
     {% include cookie-banner.html %}
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>
