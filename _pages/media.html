@@ -1,0 +1,8 @@
+---
+title: Media
+permalink: /media
+---
+
+{% for media in site.medias %}
+    <a href="{{media.url}}">{{media.title}}</a>
+{% endfor %}

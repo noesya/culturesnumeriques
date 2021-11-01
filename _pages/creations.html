@@ -1,0 +1,8 @@
+---
+title: Œuvres
+permalink: /creations
+---
+
+{% for creation in site.creations %}
+    <a href="{{creation.url}}">{{creation.title}}</a>
+{% endfor %}

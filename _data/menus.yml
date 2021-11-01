@@ -1,8 +1,12 @@
 primary:
-  - title: Home
+  - title: Accueil
     url: /
-  - title: About
-    url: /about
+  - title: Œuvres
+    url: /creations
+  - title: Auteurs & autrices
+    url: /authors
+  - title: Media
+    url: /media
 legal:
   - title: Mentions légales
     url: /mentions-legales

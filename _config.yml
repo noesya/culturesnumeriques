@@ -27,7 +27,7 @@ defaults:
   -
     scope:
       path: ""
-      type: "medias"
+      type: "media"
     values:
       layout: "media"
 
@@ -38,7 +38,7 @@ collections:
     output: true
   authors:
     output: true
-  medias:
+  media:
     output: true
 
 plugins:
