@@ -1,0 +1,5 @@
+presets:
+  default:
+    formats: [webp, original] # Order matters!
+    widths: [300, 600, 1000, 1400, 2000]
+    dimension_attributes: true

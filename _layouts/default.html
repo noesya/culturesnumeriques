@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "fr" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% include seo.html %}
+
+    <!-- Preload -->
+    <link rel="preload" href="/assets/css/main.css" as="style">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+  </head>
+  <body>
+    {% include header.html %}
+    <main aria-label="Content">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+    {% include cookie-banner.html %}
+  </body>
+</html>
