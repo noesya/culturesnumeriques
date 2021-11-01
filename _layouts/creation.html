@@ -4,15 +4,17 @@ layout: default
 {% assign author = site.authors | where: 'slug', page.author | first %}
 
 <div class="row">
-    <div class="col-md-4">
-        <img src="/assets/images/creations/{{page.image}}" alt="{{page.title}}" class="img-fluid">
-    </div>
-    <div class="offset-md-1 col-md-7">
+    <div class="col-md-7">
         <h1>{{page.title}}</h1>
         <p>
             <a href="{{author.url}}">{{author.title}}</a>
             {{page.year}}
         </p>
         <p>{{page.description}}</p>
+    </div>
+    <div class="offset-md-1 col-md-4">
+        {% if page.image %}
+            <img src="/assets/images/creations/{{page.image}}" alt="{{page.title}}" class="img-fluid">
+        {% endif %}
     </div>
 </div>
