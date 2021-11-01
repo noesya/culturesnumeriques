@@ -1,0 +1,20 @@
+---
+layout: page
+title: Une petite histoire du numérique & du virtuel 
+permalink: /
+---
+
+<h2>Créations</h2>
+{% for creation in site.creations %}
+    <a href="{{creation.url}}">{{creation.title}}</a>
+{% endfor %}
+
+<h2>Auteurs</h2>
+{% for author in site.authors %}
+    <a href="{{author.url}}">{{author.title}}</a>
+{% endfor %}
+
+<h2>Media</h2>
+{% for media in site.medias %}
+    <a href="{{media.url}}">{{media.title}}</a>
+{% endfor %}

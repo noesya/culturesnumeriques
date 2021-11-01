@@ -1,7 +1,4 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
-title: "" # the name of your site, e.g. ACME Corp.
-lang: fr
+title: Histoire numérique
 
 defaults:
   -
@@ -15,9 +12,33 @@ defaults:
       type: "pages"
     values:
       layout: "page"
+  -
+    scope:
+      path: ""
+      type: "creations"
+    values:
+      layout: "creation"
+  -
+    scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  -
+    scope:
+      path: ""
+      type: "medias"
+    values:
+      layout: "media"
 
 collections:
   pages:
+    output: true
+  creations:
+    output: true
+  authors:
+    output: true
+  medias:
     output: true
 
 plugins:

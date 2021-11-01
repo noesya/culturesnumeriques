@@ -1,0 +1,7 @@
+---
+layout: page
+---
+{% assign creations = site.creations | where: 'media', page.slug %}
+{% for creation in creations %}
+    <a href="{{creation.url}}">{{creation.title}}</a>
+{% endfor %}
