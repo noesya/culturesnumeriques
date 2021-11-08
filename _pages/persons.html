@@ -1,0 +1,8 @@
+---
+title: Personnes
+permalink: /persons
+---
+
+{% for person in site.persons %}
+    <a href="{{person.url}}">{{person.title}}</a>
+{% endfor %}

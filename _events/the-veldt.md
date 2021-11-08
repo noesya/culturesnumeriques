@@ -1,4 +1,4 @@
 ---
 title: The Veldt
-media: book
+kind: book
 ---

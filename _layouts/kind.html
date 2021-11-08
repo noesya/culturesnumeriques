@@ -1,0 +1,7 @@
+---
+layout: page
+---
+{% assign events = site.events | where: 'kind', page.slug %}
+{% for event in events %}
+    <a href="{{event.url}}">{{event.title}}</a>
+{% endfor %}

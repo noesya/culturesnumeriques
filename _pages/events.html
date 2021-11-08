@@ -1,0 +1,21 @@
+---
+title: Événements
+permalink: /events
+---
+
+{% assign events = site.events | sort: 'year' %}
+<div class="row">
+    {% for event in events %}
+    <div class="col-md-3">
+        <div class="card mb-5">
+            {% if event.image %}
+                <img src="{{event.image}}" alt="{{event.title}}">
+            {% endif %}
+            <div class="card-body">
+                <h2>{{event.title}}</h2>
+                <a href="{{event.url}}" class="stretched-link">En savoir plus</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

@@ -1,4 +1,4 @@
 ---
 title: Dans l'Imaginacon
-media: book
+kind: book
 ---

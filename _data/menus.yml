@@ -1,16 +1,12 @@
 primary:
   - title: Accueil
     url: /
-  - title: Œuvres
-    url: /creations
-  - title: Auteurs & autrices
-    url: /authors
-  - title: Media
-    url: /media
+  - title: Événements
+    url: /events
+  - title: Personnes
+    url: /persons
 legal:
   - title: Mentions légales
     url: /mentions-legales
   - title: Politique de confidentialité
     url: /politique-de-confidentialite
-  - title: Gestion des cookies
-    url: /gestion-des-cookies

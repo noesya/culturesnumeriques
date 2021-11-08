@@ -15,30 +15,30 @@ defaults:
   -
     scope:
       path: ""
-      type: "creations"
+      type: "events"
     values:
-      layout: "creation"
+      layout: "event"
   -
     scope:
       path: ""
-      type: "authors"
+      type: "persons"
     values:
-      layout: "author"
+      layout: "person"
   -
     scope:
       path: ""
-      type: "media"
+      type: "kinds"
     values:
-      layout: "media"
+      layout: "kind"
 
 collections:
   pages:
     output: true
-  creations:
+  events:
     output: true
-  authors:
+  persons:
     output: true
-  media:
+  kinds:
     output: true
 
 plugins:

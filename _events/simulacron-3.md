@@ -1,4 +1,4 @@
 ---
 title: Simulacron 3
-media: book
+kind: book
 ---

@@ -1,4 +1,4 @@
 ---
 title: Neuromancer
-media: book
+kind: book
 ---

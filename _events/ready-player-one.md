@@ -1,4 +1,4 @@
 ---
 title: Ready Player One
-media: book
+kind: book
 ---
