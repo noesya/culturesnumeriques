@@ -15,7 +15,7 @@ collections:
     editor: { preview: false }
     fields:
       - { label: Titre, name: title }
-      - { label: Personne, name: person, widget: relation, collection: persons, search_fields: [title], value_field: title }
+      - { label: Personne, name: person, widget: relation, collection: persons, search_fields: [title], multiple: true }
       - { label: Description, name: description, widget: markdown, minimal: true, required: false, buttons: [bold, link], editor_components: [], modes: [rich_text] }
       - { label: Image, name: image, widget: image, media_folder: /assets/images/events, allow_multiple: false }
       - { label: Année, name: year, widget: number, default: 2000, value_type: int, min: 1000, max: 3000, step: 1 }
