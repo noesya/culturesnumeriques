@@ -12,5 +12,4 @@ description: Un ***multi-user dungeon***, plus communément appelé **MUD**, e
 image: /assets/images/events/multi-user-dungeon.png
 person: roy-trubshaw
 kind: video-game
-type: Jeu vidéo
 ---
