@@ -1,0 +1,43 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: 'assets/uploads'
+locale: fr
+slug:
+  encoding: ascii
+  clean_accents: true
+collections:
+  - name: events
+    label: Evénements
+    label_singular: Evénement
+    folder: _events
+    create: true
+    editor: { preview: false }
+    fields:
+      - label: Titre
+        name: title
+      - label: Description
+        name: description
+        widget: markdown
+        minimal: true
+        required: false
+        buttons: [bold, link]
+        editor_components: []
+        modes: [rich_text]
+      - label: Image
+        name: image
+        widget: image
+        media_folder: /assets/images/events
+        allow_multiple: false
+  - name: persons
+    label: Personnes
+    label_singular: Personne
+    folder: _persons
+    create: true
+    editor: { preview: false }
+    fields:
+      - { label: Nom complet, name: title }
+      - { label: Prénom, name: first_name }
+      - { label: Nom, name: last_name }
+      - { label: Image, name: image, widget: image, media_folder: '/assets/images/persons', allow_multiple: false }
+      - { label: Description, name: description, required: false, widget: text }
