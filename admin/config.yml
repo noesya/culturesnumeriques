@@ -14,8 +14,7 @@ collections:
     create: true
     editor: { preview: false }
     fields:
-      - label: Titre
-        name: title
+      - { label: Titre, name: title }
       - label: Description
         name: description
         widget: markdown
@@ -29,6 +28,18 @@ collections:
         widget: image
         media_folder: /assets/images/events
         allow_multiple: false
+      - label: Personne
+        name: person
+        widget: relation
+        collection: persons
+        search_fields: [title]
+        value_field: title
+      - label: Type
+        name: type
+        widget: relation
+        collection: kinds
+        search_fields: [title]
+        value_field: title
   - name: persons
     label: Personnes
     label_singular: Personne
@@ -40,4 +51,13 @@ collections:
       - { label: Prénom, name: first_name }
       - { label: Nom, name: last_name }
       - { label: Image, name: image, widget: image, media_folder: '/assets/images/persons', allow_multiple: false }
+      - { label: Description, name: description, required: false, widget: text }
+  - name: kinds
+    label: Types d'événements
+    label_singular: Type d'événement
+    folder: _kinds
+    create: true
+    editor: { preview: false }
+    fields:
+      - { label: Titre, name: title }
       - { label: Description, name: description, required: false, widget: text }
