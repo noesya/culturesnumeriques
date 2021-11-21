@@ -20,7 +20,7 @@ collections:
       - { label: Image, name: image, widget: image, media_folder: /assets/images/events, allow_multiple: false }
       - { label: Année, name: year, widget: number, default: 2000, value_type: int, min: 1000, max: 3000, step: 1 }
       - { label: URL, name: url }
-      - { label: Type, name: type, widget: relation, collection: kinds, search_fields: [title], value_field: title }
+      - { label: Type, name: kind, widget: relation, collection: kinds, search_fields: [title] }
   - name: persons
     label: Personnes
     label_singular: Personne
