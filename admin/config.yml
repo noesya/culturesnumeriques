@@ -20,6 +20,7 @@ collections:
       - { label: Personnes, name: persons, widget: relation, collection: persons, display_fields: [title], value_field: "{{slug}}", search_fields: [title], multiple: true }
       - { label: Description, name: description, widget: markdown, minimal: true, required: false, buttons: [bold, link], editor_components: [], modes: [rich_text] }
       - { label: Image, name: image, widget: image, media_folder: /assets/images/events, allow_multiple: false }
+      - { label: Galerie, name: gallery, widget: image, media_folder: /assets/images/events, allow_multiple: true }
       - { label: URL, name: url }
   - name: persons
     label: Personnes
