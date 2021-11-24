@@ -21,7 +21,7 @@
         {% for person in event.persons %}
           {% assign p = site.persons | where: 'slug', person | first %}
           {% if p %}
-            <div class="person">
+            <div class="person row">
               <div class="col-md-5">
                 <h4 class="title">{{p.title}}</h4>
                 {% if p.birth %}

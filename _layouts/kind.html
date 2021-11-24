@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: default
 ---
+
+<h1>#{{ page.title | downcase }}</h1>
 
 <section class="events">
   {% assign events = site.events | where: 'kind', page.slug %}

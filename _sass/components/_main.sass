@@ -1,2 +1,10 @@
 main
     margin-bottom: $grid-gutter-width * 3
+    > h1
+        font-weight: 100
+        margin: 0
+        padding-bottom: 15vh
+        padding-top: calc(15vh - #{$grid-gutter-width} * 3)
+        text-align: center
+        @include media-breakpoint-up(md)
+            font-size: px2rem(120)

@@ -4,17 +4,41 @@ layout: default
 {% assign author = site.authors | where: 'slug', page.author | first %}
 
 <div class="row">
-  <div class="col-md-7">
-    <h1>{{page.title}}</h1>
-    <p>
-      <a href="{{author.url}}">{{author.title}}</a>
-      {{page.year}}
-    </p>
-    <p>{{page.description}}</p>
-  </div>
-  <div class="offset-md-1 col-md-4">
+  <div class="col-md-5">
     {% if page.image %}
       {% picture {{ page.image }} --alt {{ page.title }} %}
     {% endif %}
+  </div>
+  <div class="col-md-6 offset-md-1 ">
+    <h1>{{page.title}}</h1>
+    <p>
+      {{ page.year }}
+      {% assign events = site.events | where: 'slug', page.author | first %}
+      <a href="{{events.url}}">#{{ page.events }}</a>
+    </p>
+    <p>{{page.description}}</p>
+
+    {% for person in page.persons %}
+      {% assign p = site.persons | where: 'slug', person | first %}
+      {% if p %}
+        <div class="person row">
+          <div class="col-md-4">
+            <div class="image">
+              {% if p.image %}
+                {% picture person {{ p.image }} --alt {{ p.title }} --img loading="lazy" %}
+              {% endif %}
+            </div>
+          </div>
+          <div class="col-md-8">
+            <h4 class="title">{{p.title}}</h4>
+            {% if p.birth %}
+              <p>{{p.birth}} - {% if p.death %}{{p.death}}{% else %}~{% endif %}</p>
+            {% endif %}
+            <a href="{{p.url}}" class="link">En savoir plus</a>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+
   </div>
 </div>

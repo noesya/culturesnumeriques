@@ -1,8 +1,36 @@
 ---
-layout: page
+layout: default
 ---
 
-<section class="events">
-  {% assign events = site.events | where: 'person', page.slug %}
-  {% include events.html %}
-</section>
+<div class="row">
+  <div class="col-md-4 offset-md-1">
+    <div class="person">
+      <div class="image">
+        {% if page.image %}
+          {% picture {{ page.image }} --alt {{ page.title }} %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 offset-md-1">
+    <h1>{{page.title}}</h1>
+    {% if page.birth %}
+      <p>{{page.birth}} - {% if page.death %}{{page.death}}{% else %}~{% endif %}</p>
+    {% endif %}
+    <p>{{page.description}}</p>
+
+    {% assign events = site.events | where: 'persons', page.slug %}
+    <h2>Evènements</h2>
+    <table>
+      <tbody>
+        {% for event in events %}
+          <tr>
+            <th>{{ event.title }}</th>
+            <td>#{{ event.kind }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+  </div>
+</div>
