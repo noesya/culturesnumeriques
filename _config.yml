@@ -42,10 +42,13 @@ collections:
     output: true
   events:
     output: true
+    permalink: /evenements/:title
   persons:
     output: true
+    permalink: /personnes/:title
   kinds:
     output: true
+    permalink: /evenements/:title
 
 
 
