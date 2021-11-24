@@ -2,9 +2,9 @@ primary:
   - title: Accueil
     url: /
   - title: Personnes
-    url: /persons
+    url: /personnes
   - title: Événements
-    url: /events
+    url: /evenements
 legal:
   - title: Mentions légales
     url: /mentions-legales
