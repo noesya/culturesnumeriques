@@ -4,7 +4,8 @@
     padding-bottom: $grid-gutter-width
     padding-top: $grid-gutter-width
     position: relative
-    text-align: center
+    @include media-breakpoint-up(md)
+        text-align: center
     > a
         text-decoration: none
     button
@@ -16,6 +17,8 @@
         font-weight: 100
         padding: $grid-gutter-width
         position: absolute
-        right: -$grid-gutter-width
+        right: 0
         top: 0
         text-transform: uppercase
+        @include media-breakpoint-up(md)
+            right: -$grid-gutter-width

@@ -22,14 +22,14 @@
           {% assign p = site.persons | where: 'slug', person | first %}
           {% if p %}
             <div class="person row">
-              <div class="col-md-5">
+              <div class="col-8 col-md-5">
                 <h4 class="title">{{p.title}}</h4>
                 {% if p.birth %}
                   <p>{{p.birth}} - {% if p.death %}{{p.death}}{% else %}~{% endif %}</p>
                 {% endif %}
                 <a href="{{p.url}}" class="link">En savoir plus</a>
               </div>
-              <div class="col-md-2">
+              <div class="col-4 col-md-2">
                 <div class="image">
                   {% if p.image %}
                     {% picture person {{ p.image }} --alt {{ p.title }} --img loading="lazy" %}

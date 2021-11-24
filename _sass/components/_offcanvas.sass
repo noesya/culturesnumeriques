@@ -2,6 +2,9 @@
     backdrop-filter: blur(1px)
     background-color: rgba($secondary, .9)
     text-align: right
+    @include media-breakpoint-up(md)
+        &-end
+            width: 50vw
     &-header
         padding-top: $grid-gutter-width/2
     .nav
