@@ -1,0 +1,12 @@
+.layout-event
+    h1 ~ p:last-of-type
+        margin-bottom: 0
+    h1 + p
+        margin-bottom: $grid-gutter-width * 1.5
+        a
+            color: $secondary
+            text-decoration: none
+    .person:first-of-type
+        margin-top: $grid-gutter-width * 3
+        @include media-breakpoint-up(md)
+            margin-top: $grid-gutter-width * 5

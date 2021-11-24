@@ -14,7 +14,7 @@ layout: default
     <p>
       {{ page.year }}
       {% assign kind = site.kinds | where: 'slug', page.kind | first %}
-      <a href="{{kind.url}}">#{{ kind.title }}</a>
+      <a href="{{kind.url}}">{{ kind.hashtag }}</a>
     </p>
 
     {{ page.description | markdownify }}
