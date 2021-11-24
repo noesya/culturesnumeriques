@@ -13,7 +13,7 @@
         {% picture {{ event.image }} --alt {{ event.title }} --img loading="lazy" %}
       {% endif %}
       <h3 class="title">{{event.title}}</h3>
-      <p>{{ event.description | strip_newlines | strip_html | truncatewords: 30 }}</p>
+      <p>{{ event.abstract | strip_newlines | truncatewords: 30 }}</p>
       <a href="{{event.url}}" class="link">Lire la suite</a>
     </div>
     {% if event.persons.size > 0 %}
