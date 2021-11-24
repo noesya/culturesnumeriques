@@ -3,19 +3,21 @@ title: Événements
 permalink: /events
 ---
 
-{% assign events = site.events | sort: 'year' %}
-<div class="row row-cols-1 row-cols-md-3 row-cols-lg-4">
-    {% for event in events %}
-    <div class="col">
-        <div class="card mb-5">
-            {% if event.image %}
-                <img src="{{event.image}}" alt="{{event.title}}">
-            {% endif %}
-            <div class="card-body">
-                <h2>{{event.title}}</h2>
-                <a href="{{event.url}}" class="stretched-link">En savoir plus</a>
-            </div>
-        </div>
-    </div>
-    {% endfor %}
-</div>
+<section class="events">
+  {% assign events = site.events | sort: 'year' %}
+  {% for event in events %}
+    <article class="event">
+      <div class="col-md-5">
+        <h2 class="date">{{ event.year }}</h2>
+      </div>
+      <div class="col-md-5 offset-md-1">
+        {% if event.image %}
+          {% picture {{ event.image }} --alt {{ event.title }} --img loading="lazy" %}
+        {% endif %}
+        <h3 class="title">{{event.title}}</h3>
+        <p>{{ event.description | strip_newlines | strip_html | truncatewords: 30 }}</p>
+        <a href="{{event.url}}" class="link">Lire la suite</a>
+      </div>
+    </article>
+  {% endfor %}
+</section>

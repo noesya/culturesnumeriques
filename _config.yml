@@ -70,4 +70,5 @@ jekyll-minifier:
 
 picture:
   ignore_missing_images: true
-  source: "assets/images/"
+  fast_build: true
+  suppress_warnings: true

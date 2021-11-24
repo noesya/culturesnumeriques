@@ -1,0 +1,19 @@
+.event
+    @extend .row
+    margin-bottom: $grid-gutter-width * 2
+    .date
+        @include media-breakpoint-up(md)
+            text-align: right
+    picture
+        display: block
+        margin-bottom: $grid-gutter-width / 2
+        @include media-breakpoint-up(md)
+            margin-left: - $grid-gutter-width / 2
+    img
+        display: block
+        height: auto
+        width: 100%
+    .title
+        font-size: px2rem(28)
+    .link
+        @extend .stretched-link
