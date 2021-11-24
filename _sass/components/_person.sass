@@ -1,11 +1,16 @@
 .person
     @extend .row
     align-items: center
-    margin-bottom: $grid-gutter-width
     text-align: right
+    &:not(:last-child)
+        margin-bottom: $grid-gutter-width
     .title
         font-size: px2rem(24)
+        line-height: px2rem(32)
         margin-bottom: 0
+        & + p
+            line-height: px2rem(32)
+            margin-bottom: 0
     .image
         aspect-ratio: 1/1
         background-color: $gray-500

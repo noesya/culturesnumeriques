@@ -1,9 +1,10 @@
 .event
     @extend .row
-    margin-bottom: $grid-gutter-width * 2
+    margin-bottom: $grid-gutter-width * 3
     .date
         font-size: px2rem(81)
         font-weight: 100
+        line-height: 1
         @include media-breakpoint-up(md)
             font-size: px2rem(162)
             text-align: right
@@ -20,3 +21,5 @@
         font-size: px2rem(28)
     .link
         @extend .stretched-link
+    .person:first-child
+        margin-top: $grid-gutter-width * 3
