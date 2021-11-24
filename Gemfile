@@ -12,5 +12,5 @@ group :jekyll_plugins do
     # https://github.com/benbalter/jekyll-include-cache
     gem 'jekyll-include-cache'
     # https://github.com/mhanberg/jekyll-purgecss
-    gem 'jekyll-purgecss'
+    # gem 'jekyll-purgecss'
 end
