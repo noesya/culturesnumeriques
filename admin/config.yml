@@ -19,8 +19,8 @@ collections:
       - { label: Année, name: year, widget: number, default: 2000, value_type: int, min: 1000, max: 3000, step: 1 }
       - { label: Personnes, name: persons, widget: relation, collection: persons, display_fields: [title], value_field: "{{slug}}", search_fields: [title], multiple: true, min: 0 }
       - { label: Description, name: description, widget: markdown, minimal: true, required: false, buttons: [bold, link], editor_components: [], modes: [rich_text] }
-      - { label: Image, name: image, widget: image, media_folder: /assets/images/events, allow_multiple: false }
-      - { label: Galerie, name: gallery, widget: image, media_folder: /assets/images/events, allow_multiple: true }
+      - { label: Image, name: image, widget: image, media_folder: /assets/images/events, allow_multiple: false, required: false }
+      - { label: Galerie, name: gallery, widget: image, media_folder: /assets/images/events, allow_multiple: true, required: false, min: 0 }
       - { label: URL, name: url }
   - name: persons
     label: Personnes
