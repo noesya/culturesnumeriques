@@ -24,9 +24,10 @@ layout: default
     <table>
       <tbody>
         {% for event in events %}
+          {% assign kind = site.kinds | where: 'slug', event.kind | first %}
           <tr>
             <th><a href="{{event.url}}">{{ event.title }}</a></th>
-            <td>#{{ event.kind }}</td>
+            <td><a href="{{kind.url}}">#{{ event.kind }}</a></td>
           </tr>
         {% endfor %}
       </tbody>
