@@ -21,5 +21,11 @@
         font-size: px2rem(28)
     .link
         @extend .stretched-link
-    .person:first-child
-        margin-top: $grid-gutter-width * 3
+    .person
+        @extend .row
+        align-items: center
+        text-align: right
+        &:first-child
+            margin-top: $grid-gutter-width * 3
+        &:not(:last-child)
+            margin-bottom: $grid-gutter-width

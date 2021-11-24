@@ -1,9 +1,5 @@
 .person
-    @extend .row
-    align-items: center
-    text-align: right
-    &:not(:last-child)
-        margin-bottom: $grid-gutter-width
+    text-align: center
     .title
         font-size: px2rem(24)
         line-height: px2rem(32)
@@ -15,6 +11,7 @@
         aspect-ratio: 1/1
         background-color: $gray-500
         border-radius: 50%
+        margin-bottom: $grid-gutter-width / 2
         overflow: hidden
         position: relative
     picture

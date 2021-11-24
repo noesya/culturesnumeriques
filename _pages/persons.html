@@ -3,6 +3,20 @@ title: Personnes
 permalink: /persons
 ---
 
-{% for person in site.persons %}
-    <a href="{{person.url}}">{{person.title}}</a>
-{% endfor %}
+<div class="row row-cols-1 row-cols-md-4 g-4">
+  {% for person in site.persons %}
+    <div class="col">
+      <a href="{{person.url}}" class="person">
+        <div class="image">
+          {% if p.image %}
+            {% picture person {{ p.image }} --alt {{ p.title }} --img loading="lazy" %}
+          {% endif %}
+        </div>
+        <h2 class="title">{{person.title}}</h2>
+        {% if p.birth %}
+          <p>{{p.birth}} - {{p.death}}</p>
+        {% endif %}
+      </a>
+    </div>
+  {% endfor %}
+</div>

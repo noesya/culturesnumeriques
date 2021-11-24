@@ -2,6 +2,10 @@
 layout: page
 ---
 {% assign creations = site.creations | where: 'author', page.slug %}
-{% for creation in creations %}
-    <a href="{{creation.url}}">{{creation.title}}</a>
-{% endfor %}
+<div class="row row-cols-1 row-cols-md-2">
+  {% for creation in creations %}
+    <div class="col">
+      <a href="{{creation.url}}">{{creation.title}}</a>
+    </div>
+  {% endfor %}
+</div>

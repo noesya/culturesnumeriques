@@ -1,4 +1,29 @@
 <header class="header">
   <a href="/" class="logo">Cultures <span>Numériques</span></a>
   <p>{{ site.author }}</p>
+  <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu">Menu</button>
 </header>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="menu" aria-label="Menu">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <nav aria-label="Navigation principale">
+      <ul class="nav">
+        {% for item in site.data.menus.primary %}
+          <li class="nav-item">
+            <a href="{{ item.url }}" class="nav-link">{{ item.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+      <ul class="nav">
+        {% for item in site.data.menus.legal %}
+          <li class="nav-item">
+            <a href="{{ item.url }}" class="nav-link">{{ item.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</div>
