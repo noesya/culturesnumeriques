@@ -22,18 +22,20 @@ permalink: /events
     </article>
     {% if event.persons.size > 0 %}
       {% for person in event.persons %}
-        {% assign p = site.persons[person] %}
+        {% assign p = site.persons | where: 'slug', person | first %}
         {% if p %}
           <div class="person">
             <div class="col-md-5">
               <h4 class="title">{{p.title}}</h4>
-              <p>{{p.date}}</p>
+              <p>{{p.life}}</p>
               <a href="{{p.url}}" class="link">En savoir plus</a>
             </div>
             <div class="col-md-2">
-              {% if p.image %}
-                {% picture {{ p.image }} --alt {{ p.title }} --img loading="lazy" %}
-              {% endif %}
+              <div class="image">
+                {% if p.image %}
+                  {% picture person {{ p.image }} --alt {{ p.title }} --img loading="lazy" %}
+                {% endif %}
+              </div>
             </div>
           </div>
         {% endif %}
