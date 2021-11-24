@@ -1,5 +1,10 @@
 title: Cultures numériques
-author: Etienne Mineur
+author:
+  name: Etienne Mineur
+  url: https://etienne.design
+creator:
+  name: noesya
+  url: https://www.noesya.coop
 
 defaults:
   -

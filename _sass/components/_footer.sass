@@ -1,0 +1,18 @@
+.footer
+    background-color: $secondary
+    color: black
+    min-height: 350px
+    padding-bottom: $grid-gutter-width * 2
+    padding-top: $grid-gutter-width * 2
+    .container
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        > a
+            font-size: px2rem(26)
+            text-decoration: none
+    a
+        color: black
+    p
+        @include media-breakpoint-up(md)
+            text-align: right
