@@ -1,4 +1,0 @@
----
-title: Neuromancer
-kind: book
----
