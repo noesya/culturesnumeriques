@@ -16,7 +16,8 @@ layout: default
       {% assign kind = site.kinds | where: 'slug', page.kind | first %}
       <a href="{{kind.url}}">#{{ kind.title }}</a>
     </p>
-    <p>{{page.description}}</p>
+
+    {{ page.description | markdownify }}
 
     {% for person in page.persons %}
       {% assign p = site.persons | where: 'slug', person | first %}
