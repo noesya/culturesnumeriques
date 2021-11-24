@@ -19,6 +19,6 @@ description: "***Neuromancien*** (titre original : *Neuromancer*) est le prem
   Nebula](https://fr.wikipedia.org/wiki/Prix_Nebula \"Prix Nebula\") du meilleur
   roman en 1984."
 image: /assets/images/events/neuromancien.jpeg
-gallery: /assets/images/events/neuromancien.jpeg
+gallery: 
 url: https://www.babelio.com/livres/Gibson-Neuromancien/5334
 ---
