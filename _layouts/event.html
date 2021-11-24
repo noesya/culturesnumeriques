@@ -3,7 +3,7 @@ layout: default
 ---
 {% assign author = site.authors | where: 'slug', page.author | first %}
 
-<div class="row">
+<article class="row">
   <div class="col-md-5">
     {% if page.image %}
       {% picture {{ page.image }} --alt {{ page.title }} %}
@@ -42,4 +42,26 @@ layout: default
     {% endfor %}
 
   </div>
+</article>
+
+{% assign events = site.events | where: 'year', page.year %}
+{% if events %}
+<div class="row">
+  <div class="col-md-6">
+    <h2>Autres événements en {{page.year}}</h2>
+  </div>
+  <div class="col-md-6">
+    <table>
+      <tbody>
+        {% for event in events %}
+          {% assign kind = site.kinds | where: 'slug', event.kind | first %}
+          <tr>
+            <th><a href="{{event.url}}">{{ event.title }}</a></th>
+            <td><a href="{{kind.url}}">{{ kind.hashtag }}</a></td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
 </div>
+{% endif %}

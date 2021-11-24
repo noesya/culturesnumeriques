@@ -27,7 +27,7 @@ layout: default
           {% assign kind = site.kinds | where: 'slug', event.kind | first %}
           <tr>
             <th><a href="{{event.url}}">{{ event.title }}</a></th>
-            <td><a href="{{kind.url}}">#{{ event.kind }}</a></td>
+            <td><a href="{{kind.url}}">{{ kind.hashtag }}</a></td>
           </tr>
         {% endfor %}
       </tbody>
