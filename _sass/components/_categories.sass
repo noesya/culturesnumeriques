@@ -1,0 +1,17 @@
+.categories
+    margin-bottom: $grid-gutter-width * 3
+    @include media-breakpoint-up(md)
+        margin-bottom: $grid-gutter-width * 6
+    ul
+        display: flex
+        justify-content: center
+        list-style: none
+        margin: 0
+        padding: 0
+        text-align: center
+    li
+        margin: 0 $grid-gutter-width / 2
+    a
+        color: $secondary
+    .active
+        color: white

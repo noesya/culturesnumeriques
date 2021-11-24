@@ -5,9 +5,4 @@ permalink: /
 
 <p>Par <a href="https://etienne.design" target="_blank" rel="noreferrer">Etienne Mineur</a></p>
 
-
-<ul>
-    {% for kind in site.kinds %}
-        <li><a href="{{kind.url}}">{{kind.hashtag}}</a></li>
-    {% endfor %}
-</ul>
+{% include categories.html %}

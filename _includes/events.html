@@ -1,0 +1,45 @@
+{% assign year = 0 %}
+{% for event in events %}
+
+  <article class="event">
+    <div class="col-md-5">
+      {% if year != event.year %}
+        {% assign year = event.year %}
+        <h2 class="date">{{ event.year }}</h2>
+      {% endif %}
+    </div>
+    <div class="col-md-5 offset-md-1">
+      {% if event.image %}
+        {% picture {{ event.image }} --alt {{ event.title }} --img loading="lazy" %}
+      {% endif %}
+      <h3 class="title">{{event.title}}</h3>
+      <p>{{ event.description | strip_newlines | strip_html | truncatewords: 30 }}</p>
+      <a href="{{event.url}}" class="link">Lire la suite</a>
+    </div>
+    {% if event.persons.size > 0 %}
+      <div class="col-12">
+        {% for person in event.persons %}
+          {% assign p = site.persons | where: 'slug', person | first %}
+          {% if p %}
+            <div class="person">
+              <div class="col-md-5">
+                <h4 class="title">{{p.title}}</h4>
+                {% if p.birth %}
+                  <p>{{p.birth}} - {{p.death}}</p>
+                {% endif %}
+                <a href="{{p.url}}" class="link">En savoir plus</a>
+              </div>
+              <div class="col-md-2">
+                <div class="image">
+                  {% if p.image %}
+                    {% picture person {{ p.image }} --alt {{ p.title }} --img loading="lazy" %}
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </article>
+{% endfor %}

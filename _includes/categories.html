@@ -1,0 +1,7 @@
+<nav aria-label="Navigation par catégories" class="categories">
+  <ul>
+    {% for kind in site.kinds %}
+      <li><a href="{{kind.url}}"{% if page.slug == kind.slug %} class="active"{% endif %}>{{kind.hashtag}}</a></li>
+    {% endfor %}
+  </ul>
+</nav>
