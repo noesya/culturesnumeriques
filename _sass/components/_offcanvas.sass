@@ -1,12 +1,26 @@
 .offcanvas
-    background-color: $gray-900
+    backdrop-filter: blur(1px)
+    background-color: rgba($secondary, .9)
+    text-align: right
     .nav
         flex-direction: column
-        &:first-child
-            margin-bottom: $grid-gutter-width
-            li
-                font-size: px2rem(26)
-    .btn-close
-        filter: invert(1)
+        justify-content: flex-end
+        li
+            font-size: px2rem(40)
+            line-height: 1.5
+            @include media-breakpoint-up(xxl)
+                font-size: px2rem(50)
+        &:last-child
+            font-weight: 100
+    button
+        appearance: none
+        background: transparent
+        border: 0
+        color: black
+        font-size: px2rem(20)
         margin-left: auto
-        opacity: 1
+    a
+        &,
+        &:hover,
+        &:focus
+            color: black
