@@ -1,11 +1,21 @@
 .header
+    @extend .container
     margin-bottom: $grid-gutter-width * 3
     padding-bottom: $grid-gutter-width
     padding-top: $grid-gutter-width
+    position: relative
     text-align: center
     > a
         text-decoration: none
-    .btn
+    button
+        appearance: none
+        background: transparent
+        border: 0
+        color: white
+        font-size: px2rem(20)
+        font-weight: 100
+        padding: $grid-gutter-width
         position: absolute
-        right: $grid-gutter-width
-        top: $grid-gutter-width
+        right: -$grid-gutter-width
+        top: 0
+        text-transform: uppercase
