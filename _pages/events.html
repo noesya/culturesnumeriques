@@ -33,7 +33,7 @@ permalink: /events
             <div class="col-md-2">
               <div class="image">
                 {% if p.image %}
-                  {% picture {{ p.image }} --alt {{ p.title }} --img loading="lazy" %}
+                  {% picture person {{ p.image }} --alt {{ p.title }} --img loading="lazy" %}
                 {% endif %}
               </div>
             </div>
