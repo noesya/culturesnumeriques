@@ -2,7 +2,6 @@
 keywords: Logics
 url: https://www.lepassagerclandestin.fr/catalogue/dyschroniques/un-logique-nomme-joe/
 kind: book
-person: murray-leinster
 title: Un logique nommé Joe
 persons:
   - murray-leinster

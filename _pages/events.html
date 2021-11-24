@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Événements
 permalink: /events
 ---
@@ -19,5 +20,24 @@ permalink: /events
         <a href="{{event.url}}" class="link">Lire la suite</a>
       </div>
     </article>
+    {% if event.persons.size > 0 %}
+      {% for person in event.persons %}
+        {% assign p = site.persons[person] %}
+        {% if p %}
+          <div class="person">
+            <div class="col-md-5">
+              <h4 class="title">{{p.title}}</h4>
+              <p>{{p.date}}</p>
+              <a href="{{p.url}}" class="link">En savoir plus</a>
+            </div>
+            <div class="col-md-2">
+              {% if p.image %}
+                {% picture {{ p.image }} --alt {{ p.title }} --img loading="lazy" %}
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
   {% endfor %}
 </section>
