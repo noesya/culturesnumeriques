@@ -41,15 +41,22 @@ collections:
   kinds:
     output: true
 
+
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - package.json
+  - yarn.lock
+
 plugins:
   - jekyll-minifier
   - jekyll-sitemap
+  - jekyll-include-cache
 
 sass:
-  style: compressed
-  load_paths:
-      - _sass
-      - node_modules
+    style: compressed
 
 jekyll-minifier:
   remove_spaces_inside_tags: true
@@ -57,7 +64,10 @@ jekyll-minifier:
   remove_intertag_spaces: true
   remove_comments: true
   compress_css: false
-  compress_javascript: true
+  compress_javascript: false
+  uglifier_args:
+    harmony: true
 
 picture:
   ignore_missing_images: true
+  source: "assets/images/"

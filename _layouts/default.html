@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="fr-FR">
+<html lang="{{ page.lang | default: site.lang | default: "fr-FR" }}">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include preload.html %}
+    {% include css.html %}
     {% include seo.html %}
-    <link rel="stylesheet" href="/assets/css/main.css">
   </head>
   <body>
-      {% include header.html %}
-      <main class="container">
-          {{ content }}
-      </main>
-      {% include footer.html %}
+    {% include header.html %}
+    <main class="container" aria-label="Content">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+    {% include cookie-banner.html %}
+    <!-- {% include js.html %} -->
   </body>
 </html>
