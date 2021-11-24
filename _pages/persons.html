@@ -13,8 +13,8 @@ permalink: /persons
           {% endif %}
         </div>
         <h2 class="title">{{person.title}}</h2>
-        {% if p.birth %}
-          <p>{{p.birth}} - {{p.death}}</p>
+        {% if person.birth %}
+          <p>{{person.birth}} - {% if person.death %}{{person.death}}{% else %}~{% endif %}</p>
         {% endif %}
       </a>
     </div>

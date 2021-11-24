@@ -1,22 +1,8 @@
 .header
-    padding-bottom: 10vh
-    padding-top: 10vh
+    padding-top: $grid-gutter-width
     text-align: center
-    .logo
-        display: inline-block
-        margin-bottom: 0
+    > a
         text-decoration: none
-        @include media-breakpoint-up(md)
-            font-size: px2rem(36)
-        span
-            display: block
-            font-weight: 100
-            text-transform: uppercase
-            @include media-breakpoint-up(md)
-                font-size: px2rem(92)
-        & + p
-            font-size: px2rem(16)
-            margin-bottom: 0
     .btn
         position: absolute
         right: $grid-gutter-width

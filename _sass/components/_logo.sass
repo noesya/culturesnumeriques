@@ -1,0 +1,22 @@
+.logo
+    display: block
+    margin: 0 auto
+    padding-bottom: 0
+    text-align: center
+    text-decoration: none
+    @include media-breakpoint-up(md)
+        font-size: px2rem(36)
+    span
+        display: block
+        font-weight: 100
+        margin-top: $grid-gutter-width / 2
+        text-transform: uppercase
+        @include media-breakpoint-up(md)
+            font-size: px2rem(92)
+    & + p
+        font-size: px2rem(16)
+        margin-bottom: 0
+        padding-bottom: 15vh
+        text-align: center
+        a
+            text-decoration: none

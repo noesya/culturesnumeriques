@@ -1,11 +1,8 @@
 ---
 layout: page
 ---
-{% assign creations = site.creations | where: 'author', page.slug %}
-<div class="row row-cols-1 row-cols-md-2">
-  {% for creation in creations %}
-    <div class="col">
-      <a href="{{creation.url}}">{{creation.title}}</a>
-    </div>
-  {% endfor %}
-</div>
+
+<section class="events">
+  {% assign events = site.events | where: 'person', page.slug %}
+  {% include events.html %}
+</section>
