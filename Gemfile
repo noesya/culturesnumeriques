@@ -9,4 +9,6 @@ group :jekyll_plugins do
     gem 'jekyll-minifier'
     # https://github.com/jekyll/jekyll-sitemap
     gem 'jekyll-sitemap'
+    # https://github.com/benbalter/jekyll-include-cache
+    gem 'jekyll-include-cache'
 end

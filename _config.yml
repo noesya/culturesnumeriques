@@ -1,8 +1,34 @@
-title: Jekyll Starter
+title: Jekyll Starter BS5
 lang: fr
 
 exclude:
+  - Gemfile
+  - Gemfile.lock
   - README.md
+  - package.json
+  - yarn.lock
+
+plugins:
+  - jekyll-minifier
+  - jekyll-sitemap
+  - jekyll-include-cache
+
+sass:
+    style: compressed
+
+jekyll-minifier:
+  remove_spaces_inside_tags: true
+  remove_multi_spaces: true
+  remove_intertag_spaces: true
+  remove_comments: true
+  compress_css: false
+  compress_javascript: false
+  uglifier_args:
+    harmony: true
+
+picture:
+  ignore_missing_images: true
+  source: "assets/images/"
 
 defaults:
   -
@@ -14,21 +40,3 @@ defaults:
 collections:
   pages:
     output: true
-
-plugins:
-  - jekyll-minifier
-  - jekyll-sitemap
-
-sass:
-    style: compressed
-
-jekyll-minifier:
-  remove_spaces_inside_tags: true
-  remove_multi_spaces: true
-  remove_intertag_spaces: true
-  remove_comments: true
-  compress_css: false
-  compress_javascript: true
-
-picture:
-  ignore_missing_images: true
