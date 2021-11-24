@@ -64,6 +64,7 @@ plugins:
   - jekyll-minifier
   - jekyll-sitemap
   - jekyll-include-cache
+  - jekyll-purgecss
 
 sass:
     style: compressed
