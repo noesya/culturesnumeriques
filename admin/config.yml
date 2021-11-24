@@ -35,7 +35,7 @@ collections:
       - { label: Image, name: image, widget: image, media_folder: '/assets/images/persons', allow_multiple: false }
       - { label: Description, name: description, required: false, widget: text }
       - { label: Naissance, name: birth, widget: number, default: 1950, value_type: int, min: 1000, max: 3000, step: 1 }
-      - { label: Décès, name: death, widget: number, value_type: int, min: 1000, max: 3000, step: 1 }
+      - { label: Décès, name: death, widget: number, value_type: int, min: 1000, max: 3000, step: 1, required: false }
   - name: kinds
     label: Types d'événements
     label_singular: Type d'événement
