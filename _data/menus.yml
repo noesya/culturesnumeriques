@@ -1,10 +1,10 @@
 primary:
   - title: Accueil
     url: /
-  - title: Événements
-    url: /events
   - title: Personnes
     url: /persons
+  - title: Événements
+    url: /events
 legal:
   - title: Mentions légales
     url: /mentions-legales
