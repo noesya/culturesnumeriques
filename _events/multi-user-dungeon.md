@@ -1,5 +1,12 @@
 ---
 title: Multi User Dungeon
+kind: video-game
+year: 1978
+persons:
+  - roy-trubshaw
+  - richard-bartle
+abstract: "Un multi-user dungeon, plus communément appelé MUD, est un jeu
+  vidéo hébergé par un serveur sur Internet. "
 description: Un ***multi-user dungeon***, plus communément appelé **MUD**, est
   un [jeu vidéo](https://fr.wikipedia.org/wiki/Jeu_vid%C3%A9o "Jeu
   vidéo") hébergé par
@@ -9,7 +16,7 @@ description: Un ***multi-user dungeon***, plus communément appelé **MUD**, e
   textuelles de salles, d'objets ou d'autres personnages dans un monde virtuel.
   Ils peuvent interagir entre eux et avec l'environnement en tapant des
   commandes qui ressemblent au langage courant.
-image: /assets/images/events/multi-user-dungeon.png
+url: https://fr.wikipedia.org/wiki/Multi-user_dungeon
 person: roy-trubshaw
-kind: video-game
+image: /assets/images/events/multi-user-dungeon.png
 ---
