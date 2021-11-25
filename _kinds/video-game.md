@@ -1,4 +1,4 @@
 ---
-title: Jeu vidéo
-hashtag: '#jeuvideo'
+title: Jeux vidéos
+hashtag: '#jeuxvideos'
 ---

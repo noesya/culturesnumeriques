@@ -1,4 +1,4 @@
 ---
-title: Livre
-hashtag: '#livre'
+title: Livres
+hashtag: '#livres'
 ---

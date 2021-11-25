@@ -1,4 +1,4 @@
 ---
-title: Film
-hashtag: '#film'
+title: Films
+hashtag: '#films'
 ---
