@@ -16,6 +16,8 @@ collections:
     view_groups:
       - label: Année
         field: year
+      - label: Type
+        field: kind
     fields:
       - { label: Titre, name: title }
       - { label: Type, name: kind, widget: relation, collection: kinds, display_fields: [title], value_field: "{{slug}}", search_fields: [title] }
