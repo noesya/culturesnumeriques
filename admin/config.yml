@@ -14,8 +14,6 @@ collections:
     create: true
     editor: { preview: false }
     view_groups:
-      - label: Année
-        field: year
       - label: Type
         field: kind
     fields:
