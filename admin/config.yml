@@ -43,8 +43,8 @@ collections:
       - { label: Naissance, name: birth, widget: number, default: 1950, value_type: int, min: 1000, max: 3000, step: 1 }
       - { label: Décès, name: death, widget: number, value_type: int, min: 1000, max: 3000, step: 1, required: false }
   - name: kinds
-    label: Types d'événements
-    label_singular: Type d'événement
+    label: Types
+    label_singular: Type
     folder: _kinds
     create: true
     editor: { preview: false }
