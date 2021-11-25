@@ -1,13 +1,47 @@
 .events
+    background: url($icon-triangle) no-repeat calc(50% + 1px) top
     padding-bottom: 10vh
     padding-top: 10vh
     position: relative
     @include media-breakpoint-up(md)
         &::before
             background-color: white
+            bottom: 0
             content: ''
-            height: 100%
             left: 50%
             position: absolute
-            top: 0
+            top: 11px
             width: 1px
+            z-index: 1
+        &::after
+            background: url($icon-triangle) no-repeat
+            bottom: 0
+            content: ''
+            height: 12px
+            left: 50%
+            position: absolute
+            transform: translate(-50%, 100%)
+            width: 18px
+        .event
+            picture
+                margin-left: - $grid-gutter-width / 2
+                position: relative
+                &::before
+                    content: ''
+                    background: black
+                    border: 1px solid white
+                    border-radius: 50px
+                    height: 8px
+                    left: 0
+                    position: absolute
+                    top: 0
+                    transform: translate(-50%,-50%)
+                    width: 8px
+                    z-index: 1
+            .link
+                &::before
+                    @include arrow
+                    margin-right: $grid-gutter-width / 2
+        .person
+            .image
+                z-index: 1
