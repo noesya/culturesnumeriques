@@ -1,42 +1,46 @@
 {% assign year = 0 %}
 {% for event in events %}
-
   <article class="event">
-    <div class="col-md-5">
-      {% if year != event.year %}
-        {% assign year = event.year %}
-        <h2 class="date">{{ event.year }}</h2>
-      {% endif %}
+    <div class="row">
+        <div class="col-md-5">
+          {% if year != event.year %}
+            {% assign year = event.year %}
+            <h2 class="date">{{ event.year }}</h2>
+          {% endif %}
+        </div>
+        <div class="col-md-4 offset-md-1">
+          {% if event.image %}
+            {% picture {{ event.image }} --alt {{ event.title }} --img loading="lazy" %}
+          {% endif %}
+        </div>
     </div>
-    <div class="col-md-4 offset-md-1">
-      {% if event.image %}
-        {% picture {{ event.image }} --alt {{ event.title }} --img loading="lazy" %}
-      {% endif %}
-      <h3 class="title">{{event.title}}</h3>
-      <p>{{ event.abstract | strip_newlines | truncatewords: 30 }}</p>
-      <a href="{{event.url}}" class="link">Lire la suite</a>
+    <div class="row pb-5">
+        <div class="col-md-5 offset-md-6">
+          <h3 class="title">{{event.title}}</h3>
+          <p>{{ event.abstract | strip_newlines | truncatewords: 30 }}</p>
+          <a href="{{event.url}}" class="link">Lire la suite</a>
+      </div>
     </div>
+
     {% if event.persons.size > 0 %}
-      <div class="col-12">
-        {% for person in event.persons %}
-          {% assign p = site.persons | where: 'slug', person | first %}
-          {% if p %}
-            <div class="person row">
-              <div class="col-8 col-md-5">
-                <h4 class="title">{{p.title}}</h4>
-                <a href="{{p.url}}" class="link">En savoir plus</a>
-              </div>
-              <div class="col-4 col-md-2">
-                <div class="image">
-                  {% if p.image %}
-                    {% picture person {{ p.image }} --alt {{ p.title }} --img loading="lazy" %}
-                  {% endif %}
-                </div>
+      {% for slug in event.persons %}
+        {% assign person = site.persons | where: 'slug', slug | first %}
+        {% if person %}
+          <div class="person row">
+            <div class="col-8 col-md-5">
+              <h4 class="title">{{person.title}}</h4>
+              <a href="{{person.url}}" class="link">En savoir plus</a>
+            </div>
+            <div class="col-4 col-md-2">
+              <div class="image">
+                {% if person.image %}
+                  {% picture person {{ person.image }} --alt {{ person.title }} --img loading="lazy" %}
+                {% endif %}
               </div>
             </div>
-          {% endif %}
-        {% endfor %}
-      </div>
+          </div>
+        {% endif %}
+      {% endfor %}
     {% endif %}
   </article>
 {% endfor %}

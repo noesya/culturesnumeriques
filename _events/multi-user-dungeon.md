@@ -1,6 +1,6 @@
 ---
 title: Multi User Dungeon
-kind: video-game
+kind: jeux-videos
 year: 1978
 persons:
   - roy-trubshaw

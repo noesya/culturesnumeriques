@@ -1,6 +1,6 @@
 ---
 title: Snow Crash
-kind: book
+kind: livres
 year: 1992
 persons:
   - neal-stephenson

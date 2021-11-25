@@ -12,7 +12,7 @@ abstract: « Vous connaissez les “logiques“. Vous en avez un chez vous. Ça
   penser à mal, Joe mènerait-il l’humanité à sa perte ?
 keywords: Logics
 title: Un logique nommé Joe
-kind: book
+kind: livres
 year: 1946
 persons:
   - murray-leinster

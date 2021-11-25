@@ -1,6 +1,6 @@
 ---
 title: Ready Player One
-kind: movie
+kind: films
 year: 2018
 persons:
   - steven-spielberg

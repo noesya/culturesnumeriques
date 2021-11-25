@@ -1,6 +1,6 @@
 ---
 title: The Veldt
-kind: book
+kind: livres
 year: 1950
 persons:
   - ray-bradbury
