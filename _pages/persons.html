@@ -3,18 +3,22 @@ title: Personnes
 permalink: /personnes
 ---
 
-<div class="row row-cols-1 row-cols-md-4 g-4">
+<div class="row row-cols-1 row-cols-md-4">
   {% for person in site.persons %}
-    <div class="col">
+    <div class="col mb-5">
       <a href="{{person.url}}" class="person">
-        <div class="image">
-          {% if p.image %}
-            {% picture person {{ p.image }} --alt {{ p.title }} --img loading="lazy" %}
-          {% endif %}
+        <div class="row">
+            <div class="col-md-8">
+                <div class="image">
+                    {% if person.image %}
+                    {% picture person {{ person.image }} --alt {{ person.title }} --img loading="lazy" %}
+                    {% endif %}
+                </div>
+            </div>
         </div>
         <h2 class="title">{{person.title}}</h2>
         {% if person.birth %}
-          <p>{{person.birth}} - {% if person.death %}{{person.death}}{% else %}~{% endif %}</p>
+          <p>{{person.birth}} &mdash;{% if person.death %} {{person.death}}{% endif %}</p>
         {% endif %}
       </a>
     </div>

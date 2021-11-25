@@ -19,23 +19,23 @@ layout: default
 
     {{ page.description | markdownify }}
 
-    {% for person in page.persons %}
-      {% assign p = site.persons | where: 'slug', person | first %}
-      {% if p %}
+    {% for slug in page.persons %}
+      {% assign person = site.persons | where: 'slug', slug | first %}
+      {% if person %}
         <div class="person row">
           <div class="col-4">
             <div class="image">
-              {% if p.image %}
-                {% picture person {{ p.image }} --alt {{ p.title }} --img loading="lazy" %}
+              {% if person.image %}
+                {% picture person {{ person.image }} --alt {{ person.title }} --img loading="lazy" %}
               {% endif %}
             </div>
           </div>
           <div class="col-8">
-            <h4 class="title">{{p.title}}</h4>
-            {% if p.birth %}
-              <p>{{p.birth}} - {% if p.death %}{{p.death}}{% else %}~{% endif %}</p>
+            <h4 class="title">{{person.title}}</h4>
+            {% if person.birth %}
+              <p>{{person.birth}} &mdash;{% if person.death %} {{person.death}}{% endif %}</p>
             {% endif %}
-            <a href="{{p.url}}" class="link">En savoir plus</a>
+            <a href="{{person.url}}" class="link">En savoir plus</a>
           </div>
         </div>
       {% endif %}
@@ -46,9 +46,9 @@ layout: default
 
 {% assign events = site.events | where: 'year', page.year %}
 {% if events %}
-<div class="row">
+<div class="row mt-5 pt-5">
   <div class="col-md-6">
-    <h2>Autres événements en {{page.year}}</h2>
+    <h2>Evénements en {{page.year}}</h2>
   </div>
   <div class="col-md-6">
     <table>
