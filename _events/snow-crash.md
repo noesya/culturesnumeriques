@@ -2,6 +2,8 @@
 title: Snow Crash
 kind: book
 year: 1992
+persons:
+  - neal-stephenson
 abstract: "Le Samouraï virtuel (titre anglais : Snow Crash) est un roman de Neal
   Stephenson, paru en 1992, se déroulant dans un univers futuriste parfois
   qualifié de cyberpunk ou, plus précisément, de postcyberpunk. "
