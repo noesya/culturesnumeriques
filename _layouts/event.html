@@ -44,11 +44,20 @@ layout: default
   </div>
 </article>
 
-{% assign events = site.events | where: 'year', page.year %}
+<nav aria-label="Pagination entre événement">
+  {% if page.previous.url %}
+    <a class="prev link" href="{{page.previous.url}}">{{page.previous.title}}</a>
+  {% endif %}
+  {% if page.next.url %}
+    <a class="next link" href="{{page.next.url}}">{{page.next.title}}</a>
+  {% endif %}
+</nav>
+
+{% assign events = site.events | where: 'year', page.year | where_exp: "item", "item.slug != page.slug" %}
 {% if events %}
 <div class="row mt-5 pt-5">
   <div class="col-md-6">
-    <h2>Evénements en {{page.year}}</h2>
+    <h2>Autres événements en {{page.year}}</h2>
   </div>
   <div class="col-md-6">
     <table>

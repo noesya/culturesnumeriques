@@ -10,7 +10,9 @@
         </div>
         <div class="col-md-4 offset-md-1">
           {% if event.image %}
-            {% picture {{ event.image }} --alt {{ event.title }} --img loading="lazy" %}
+            <a href="{{event.url}}">
+              {% picture {{ event.image }} --alt {{ event.title }} --img loading="lazy" %}
+            </a>
           {% endif %}
         </div>
     </div>
@@ -33,9 +35,11 @@
             </div>
             <div class="col-4 col-md-2">
               <div class="image">
-                {% if person.image %}
-                  {% picture person {{ person.image }} --alt {{ person.title }} --img loading="lazy" %}
-                {% endif %}
+                <a href="{{person.url}}">
+                  {% if person.image %}
+                    {% picture person {{ person.image }} --alt {{ person.title }} --img loading="lazy" %}
+                  {% endif %}
+                </a>
               </div>
             </div>
           </div>

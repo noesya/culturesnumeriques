@@ -38,10 +38,14 @@
                     transform: translate(-50%,-50%)
                     width: 8px
                     z-index: 1
-            .link
+            p + .link
                 &::before
                     @include arrow
                     margin-right: $grid-gutter-width / 2
         .person
             .image
                 z-index: 1
+            .link
+                &::after
+                    @include arrow
+                    margin-left: $grid-gutter-width / 2

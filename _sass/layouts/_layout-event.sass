@@ -10,3 +10,18 @@
         margin-top: $grid-gutter-width * 3
         @include media-breakpoint-up(md)
             margin-top: $grid-gutter-width * 5
+    main > nav
+        display: flex
+        margin-top: $grid-gutter-width * 3
+        @include media-breakpoint-up(md)
+            margin-top: $grid-gutter-width * 5
+        .prev
+            &::before
+                @include arrow
+                margin-right: $grid-gutter-width / 2
+                transform: scale(-1,1)
+        .next
+            margin-left: auto
+            &::after
+                @include arrow
+                margin-left: $grid-gutter-width / 2
