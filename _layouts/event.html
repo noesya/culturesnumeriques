@@ -53,8 +53,8 @@ layout: default
   {% endif %}
 </nav>
 
-{% assign events = site.events | where: 'year', page.year | where_exp: "item", "item.slug != page.slug" %}
-{% if events %}
+{% assign other_events = site.events | where: 'year', page.year | where_exp: "item", "item.slug != page.slug" %}
+{% if other_events.size > 0 %}
 <div class="row mt-5 pt-5">
   <div class="col-md-6">
     <h2>Autres événements en {{page.year}}</h2>
@@ -62,7 +62,7 @@ layout: default
   <div class="col-md-6">
     <table>
       <tbody>
-        {% for event in events %}
+        {% for event in other_events %}
           {% assign kind = site.kinds | where: 'slug', event.kind | first %}
           <tr>
             <th><a href="{{event.url}}">{{ event.title }}</a></th>

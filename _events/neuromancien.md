@@ -1,8 +1,6 @@
 ---
 title: Neuromancien
 kind: livres
-date: 1984-01-01
-
 year: 1984
 persons:
   - william-gibson

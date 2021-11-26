@@ -1,7 +1,6 @@
 ---
 title: Simulacron 3
 kind: livres
-date: 1964-01-01
 year: 1964
 abstract: "Simulacron 3 (titre original : Simulacron 3) est un roman de
   science-fiction de Daniel F. Galouye paru aux États-Unis en 1964, publié pour
