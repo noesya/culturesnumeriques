@@ -13,6 +13,7 @@ abstract: « Vous connaissez les “logiques“. Vous en avez un chez vous. Ça
 keywords: Logics
 title: Un logique nommé Joe
 kind: livres
+date: 1946-01-01
 year: 1946
 persons:
   - murray-leinster

@@ -1,6 +1,7 @@
 ---
 title: The Veldt
 kind: livres
+date: 1950-01-01
 year: 1950
 persons:
   - ray-bradbury
