@@ -1,5 +1,6 @@
 <nav aria-label="Navigation par catégories" class="categories">
   <ul>
+    <li><a href="/evenements">Événements</a></li>
     {% for kind in site.kinds %}
       <li><a href="{{kind.url}}"{% if page.slug == kind.slug %} class="active"{% endif %}>{{kind.hashtag}}</a></li>
     {% endfor %}

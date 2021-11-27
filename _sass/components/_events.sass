@@ -3,6 +3,22 @@
     padding-bottom: 10vh
     padding-top: 10vh
     position: relative
+    &--compact
+        .date
+            font-size: px2rem(36)
+            margin-bottom: 0
+            @include media-breakpoint-up(md)
+                height: 0
+        .event
+            margin-bottom: 0
+        .row
+            padding-bottom: 0 !important
+        a
+            display: block
+            height: 0
+            overflow: hidden
+        picture, p, .person
+            display: none
     @include media-breakpoint-up(md)
         &::before
             background-color: white

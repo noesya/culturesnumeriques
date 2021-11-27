@@ -4,7 +4,5 @@ layout: default
 
 <h1>{{ page.hashtag }}</h1>
 
-<section class="events">
-  {% assign events = site.events | where: 'kind', page.slug %}
-  {% include events.html %}
-</section>
+{% assign events = site.events | where: 'kind', page.slug %}
+{% include events.html %}

@@ -4,9 +4,7 @@ title: Événements
 permalink: /evenements
 ---
 
-{% include categories.html %}
+<h1>Événements</h1>
 
-<section class="events">
-  {% assign events = site.events | sort: 'year' %}
-  {% include events.html %}
-</section>
+{% assign events = site.events | sort: 'year' %}
+{% include events.html %}
