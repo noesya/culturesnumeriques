@@ -1,16 +1,17 @@
 /* global */
-console.log('ok');
 window.events = {
     init: function () {
         'use strict';
+        this.events = document.querySelector('#events');
         this.buttonExtend = document.querySelector('.js-events-extend');
         this.buttonCompact = document.querySelector('.js-events-compact');
         this.bindActions();
+        console.log('init');
     },
 
     bindActions: function () {
         'use strict';
-        console.log('ok');
+        console.log('bindActions');
         var that = this;
         if (this.buttonExtend) {
             this.buttonExtend.addEventListener('click', function () {
@@ -27,6 +28,13 @@ window.events = {
     extend: function () {
         'use strict';
         console.log('extend');
+        this.events.classList.remove('events--compact');
+    },
+
+    compact: function () {
+        'use strict';
+        console.log('compact');
+        this.events.classList.add('events--compact');
     },
 
     invoke: function () {
