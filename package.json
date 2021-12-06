@@ -5,8 +5,9 @@
   "author": "noesya",
   "license": "MIT",
   "scripts": {
-    "webpack": "./node_modules/.bin/webpack --watch",
-    "build": "./node_modules/.bin/webpack | JEKYLL_ENV=production bundle exec jekyll build"
+    "webpack": "./node_modules/.bin/webpack --watch --mode=development",
+    "build": "./node_modules/.bin/webpack | JEKYLL_ENV=production bundle exec jekyll build",
+    "start": "./node_modules/.bin/webpack --watch --mode=development | bundle exec jekyll serve --livereload"
   },
   "dependencies": {
     "@popperjs/core": "^2.10.1",
