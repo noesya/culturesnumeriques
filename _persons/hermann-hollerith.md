@@ -2,6 +2,7 @@
 title: Hermann Hollerith
 first_name: Hermann
 last_name: Hollerith
+image: /assets/images/persons/artfichier_509462_7530784_20180108203848.jpg
 description: "Hermann Hollerith, ingénieur américain en mécanique, invente un
   système de perforatrices, de trieuses et d'additionneuses à cartes, qui va
   permettre de dépouiller rapidement le recensement des États-Unis de 1890. Sur
