@@ -2,6 +2,8 @@
 title: La première machine à écrire
 kind: inventions
 year: 1872
+persons:
+  - christopher-latham-sholes
 abstract: >
   Une machine à écrire est une machine mécanographique permettant de produire
   des documents avec des caractères imprimés. Elle se présente sous la forme
