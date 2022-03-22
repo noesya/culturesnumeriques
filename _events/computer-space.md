@@ -2,7 +2,10 @@
 title: Computer Space
 kind: jeux-videos
 year: 1971
-abstract: ""
+abstract: |-
+  Computer Space est un jeu vidéo
+  d'arcade distribué en novembre
+  1971 par Nutting Associates.
 description: |-
   Computer Space est un jeu vidéo
   d'arcade distribué en novembre
