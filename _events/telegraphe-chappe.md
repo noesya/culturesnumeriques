@@ -1,6 +1,6 @@
 ---
 title: Télégraphe Chappe
-kind: invention
+kind: inventions
 year: 1794
 persons:
   - claude-chappe

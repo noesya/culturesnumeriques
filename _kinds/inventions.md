@@ -1,3 +1,4 @@
 ---
 title: Inventions
+hashtag: '#inventions'
 ---

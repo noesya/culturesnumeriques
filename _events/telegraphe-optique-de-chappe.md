@@ -1,6 +1,6 @@
 ---
 title: Télégraphe optique de CHAPPE
-kind: invention
+kind: inventions
 year: 1792
 persons: []
 abstract: |-

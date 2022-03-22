@@ -1,6 +1,6 @@
 ---
 title: Le Métier Jacquard
-kind: invention
+kind: inventions
 year: 1801
 persons:
   - joseph-marie-jacquard

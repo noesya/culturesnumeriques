@@ -1,6 +1,6 @@
 ---
 title: Podomètre
-kind: invention
+kind: inventions
 year: 2000
 persons:
   - jean-fernel

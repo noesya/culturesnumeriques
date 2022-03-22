@@ -1,6 +1,6 @@
 ---
 title: SCUMM-VM (Lucas Art)
-kind: invention
+kind: inventions
 year: 1987
 description: "**ScummVM** est une [machine
   virtuelle](https://fr.wikipedia.org/wiki/Machine_virtuelle#Machine_virtuelle_\

@@ -1,6 +1,6 @@
 ---
 title: Compter avec des cailloux
-kind: invention
+kind: inventions
 year: 1000
 abstract: Le moyen le plus simple consiste à utiliser des cailloux disposés sur le sol.
 description: >-

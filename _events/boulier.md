@@ -1,6 +1,6 @@
 ---
 title: Boulier
-kind: invention
+kind: inventions
 year: 1000
 abstract: Le boulier est un abaque (outil servant à calculer) formé d'un cadre
   rectangulaire muni de tiges sur lesquelles coulissent des boules.

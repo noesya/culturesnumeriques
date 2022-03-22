@@ -1,6 +1,6 @@
 ---
 title: Programme de calcul des nombres de Bernoulli
-kind: invention
+kind: inventions
 year: 1843
 persons:
   - augusta-ada-king

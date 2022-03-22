@@ -1,6 +1,6 @@
 ---
 title: Quipu
-kind: invention
+kind: inventions
 year: 1000
 abstract: |-
   Le terme désigne aujourd'hui les

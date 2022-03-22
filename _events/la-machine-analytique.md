@@ -1,6 +1,6 @@
 ---
 title: La machine analytique
-kind: invention
+kind: inventions
 year: 1834
 persons:
   - charles-babbage

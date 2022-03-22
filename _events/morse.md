@@ -1,6 +1,6 @@
 ---
 title: Morse
-kind: invention
+kind: inventions
 year: 1832
 persons:
   - samuel-morse

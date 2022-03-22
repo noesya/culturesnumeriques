@@ -1,6 +1,6 @@
 ---
 title: " Dispositif d'enregistrement de sons sur cylindres de cire"
-kind: invention
+kind: inventions
 year: 1877
 persons:
   - thomas-alva-edison

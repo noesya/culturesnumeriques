@@ -1,6 +1,6 @@
 ---
 title: Stock Ticker
-kind: invention
+kind: inventions
 year: 1867
 persons:
   - thomas-alva-edison

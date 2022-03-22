@@ -1,6 +1,6 @@
 ---
 title: Le premier système de tabulation électrique
-kind: invention
+kind: inventions
 year: 1924
 persons:
   - hermann-hollerith

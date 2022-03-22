@@ -1,6 +1,6 @@
 ---
 title: "12 o’clocks "
-kind: invention
+kind: inventions
 year: 1996
 persons:
   - john-maeda

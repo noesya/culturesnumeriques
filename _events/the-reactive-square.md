@@ -1,6 +1,6 @@
 ---
 title: The Reactive Square
-kind: invention
+kind: inventions
 year: 1995
 persons:
   - john-maeda

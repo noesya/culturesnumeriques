@@ -1,6 +1,6 @@
 ---
 title: Illustrator version 1.0
-kind: invention
+kind: inventions
 year: 1984
 abstract: ""
 description: >-

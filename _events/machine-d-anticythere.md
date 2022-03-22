@@ -1,6 +1,6 @@
 ---
 title: Machine d’Anticythère
-kind: invention
+kind: inventions
 year: 1000
 abstract: La machine d'Anticythère, appelée également mécanisme d'Anticythère,
   est considérée comme le premier calculateur analogique antique permettant de

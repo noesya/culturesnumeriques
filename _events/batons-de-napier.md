@@ -1,6 +1,6 @@
 ---
 title: Bâtons de Napier
-kind: invention
+kind: inventions
 year: 1617
 persons:
   - john-napier

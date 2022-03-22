@@ -1,6 +1,6 @@
 ---
 title: L’arithmétique binaire
-kind: invention
+kind: inventions
 year: 1679
 persons:
   - gottfried-wilhelm-leibniz

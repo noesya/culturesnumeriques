@@ -1,6 +1,6 @@
 ---
 title: Pascaline
-kind: invention
+kind: inventions
 year: 1642
 abstract: "La Pascaline, initialement dénommée machine d’arithmétique puis roue
   Pascaline, est une calculatrice mécanique inventée par Blaise Pascal et
