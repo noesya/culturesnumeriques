@@ -1,6 +1,6 @@
 ---
 title: Computer Space
-kind: invention
+kind: jeux-videos
 year: 1971
 abstract: ""
 description: |-
