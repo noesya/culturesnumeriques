@@ -2,7 +2,10 @@
 title: E.T Atari
 kind: jeux-videos
 year: 1982
-abstract: |-
+abstract: |
+  Le 7 décembre 1982 est une date
+  importante dans l’histoire des jeux vidéo.
+description: |-
   Le 7 décembre 1982 est une date
   importante dans l’histoire des jeux vidéo.
   Atari annonce que les ventes de consoles
