@@ -2,6 +2,7 @@
 title: Jean Fernel
 first_name: Jean
 last_name: Fernel
+image: /assets/images/persons/800px-jean_fernel.jpg
 description: >
   Jean Fernel ou Jean François Fernel (en latin Joannes Fernelius1), est un
   médecin français, né vers 15062 à Montdidier dans la Somme3, mort le 26 avril
