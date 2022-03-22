@@ -12,5 +12,5 @@ description: |-
   distribué en série sur le circuit
   commercial et ainsi le premier jeu
   vidéo qui ait été vendu.
-image: /assets/images/events/computerspace-blue.webp
+image: /assets/images/events/computerspace-05-g-1-.jpg
 ---
