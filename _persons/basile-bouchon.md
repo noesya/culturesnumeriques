@@ -2,6 +2,7 @@
 title: Basile Bouchon
 first_name: Basile
 last_name: Bouchon
+image: /assets/images/persons/basile-bouchon-bda35aef-a1d1-4965-83fa-d6d6ad7393b-resize-750.jpeg
 description: >-
   Basile Bouchon est l'inventeur du métier à tisser semi-automatique.
 
