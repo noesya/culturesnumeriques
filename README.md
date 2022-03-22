@@ -3,12 +3,14 @@
 ## Jekyll
 
 ### Plugins
+
 * Jekyll Include Cache
 * Jekyll Minifier
 * Jekyll Picture Tag
 * Jekyll Sitemap
 
 ### Template
+
 Pour faire la mise à jour :
 
 ```
