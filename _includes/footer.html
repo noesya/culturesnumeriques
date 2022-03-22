@@ -1,13 +1,21 @@
 <footer class="footer">
   <div class="container">
-    <a href="/">{{ site.title }}</a>
-    <p>Un projet en creative commons d’<a href="{{ site.author.url }}" target="_blank" rel="noreferrer">{{ site.author.name }}</a>,  <br>réalisé par <a href="{{ site.creator.url }}" target="_blank" rel="noreferrer">{{ site.creator.name }}</a> en open source</p>
-    <ul>
-      {% for item in site.data.menus.legal %}
-        <li>
-          <a href="{{ item.url }}">{{ item.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
+    <div class="row">
+      <div class="col-md-6">
+        <a href="/" class="logo">{{ site.title }}</a>
+      </div>
+      <div class="col-md-6">
+        <p>
+          Un projet en creative commons d’<a href="{{ site.author.url }}" target="_blank" rel="noreferrer">{{ site.author.name }}</a>, 
+          réalisé en open source par <a href="{{ site.creator.url }}" target="_blank" rel="noreferrer">{{ site.creator.name }}</a> et une équipe de <a href="https://www.mmibordeaux.com" target="_blank" rel="noreferrer">MMI Bordeaux</a> (Jason&nbsp;Nago, Arthur&nbsp;Blanc, Adel&nbsp;Sanaa, Leïly&nbsp;Coquard, Arthaud&nbsp;Proust, Kayo&nbsp;Monteiro, Auréliane&nbsp;Dor, Régis&nbsp;Cosaque, Lyam&nbsp;Roux, Florentin&nbsp;Sendra, Gabriel&nbsp;Rouleau).</p>
+        <ul>
+          {% for item in site.data.menus.legal %}
+            <li>
+              <a href="{{ item.url }}">{{ item.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
   </div>
 </footer>
