@@ -1,5 +1,5 @@
 ---
-title: PC par IBM
+title: IBM PC
 kind: inventions
 year: 1981
 description: >-
