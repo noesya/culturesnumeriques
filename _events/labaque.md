@@ -1,6 +1,6 @@
 ---
 title: L'abaque
-kind: livres
+kind: invention
 year: 1000
 abstract: >-
   Abaque (d'abacus en latin et d'abax ἄβαξ en grec signifiant « table à
