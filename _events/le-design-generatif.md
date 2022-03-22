@@ -15,5 +15,5 @@ description: >-
 
   La première trace de l’utilisation d’une telle méthode semble remonter à l’année 1871. En effet, [Edouard Gand](https://fr.wikipedia.org/wiki/%C3%89douard_Gand), technicien et ingénieur du textile de Amiens utilisera en cette année son métier à tisser pour créer un système capable d’improviser des motifs grâce à quelques modification sur ce dernier.
 image: /assets/images/events/image8.jpg__1184x0_q85_subsampling-2.jpg
-gallery: /assets/images/events/frustum-generate.jpg
+gallery: /assets/images/events/1_iq14gykskb-uq7pvwyy1zw.png
 ---
