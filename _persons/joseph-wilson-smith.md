@@ -1,7 +1,7 @@
 ---
-title: Joseph Wilson Smith
+title: Joseph Wilson Swan
 first_name: Joseph
-last_name: Smith
+last_name: Swan
 image: /assets/images/persons/joseph-swan.webp
 description: >-
   Joseph Wilson Swan (31 octobre 1828, Sunderland, Royaume-Uni - 27 mai 1914 (à
