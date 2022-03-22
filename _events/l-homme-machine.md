@@ -2,6 +2,8 @@
 title: L’Homme Machine
 kind: livres
 year: 1748
+persons:
+  - julien-offray-de-la-mettrie
 abstract: Inspiré par le concept d'"animal-machine" formulé un siècle plus
   tôt par René Descartes dans son Discours de la Méthode, La Mettrie
   s'inscrit ici dans le mécanisme.
