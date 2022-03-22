@@ -4,5 +4,5 @@ kind: invention
 year: 1996
 persons:
   - john-maeda
-image: http://cmuems.com/2016/60212/wp-content/uploads/2016/09/maeda-04-1.gif
+image: /assets/images/events/5dde3c77c68b46623a081138e9ae5fbe.jpg
 ---
