@@ -1,6 +1,6 @@
 ---
 title: Computer Space
-kind: livres
+kind: invention
 year: 1971
 abstract: ""
 description: |-
