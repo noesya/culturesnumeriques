@@ -3,9 +3,13 @@ title: PacMan
 kind: jeux-videos
 year: 1979
 persons: []
-abstract: |-
+abstract: |
   Pacman de Toru Iwatani pour l'entreprise
   japonaise Namco.
+description: |-
+  Pacman de Toru Iwatani pour l'entreprise
+  japonaise Namco.
+
   Le champion du monde est Billy Mitchell,
   Américain qui réalisa un score de
   3 333 360 en 1999. Il fit ce score en 6
