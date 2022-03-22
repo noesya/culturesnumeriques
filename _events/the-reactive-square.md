@@ -15,5 +15,5 @@ description: Le premier livre réactif, *The Reactive Square*, est une adaptatio
   interactions avec l'ordinateur. Plutôt que de manipuler maladroitement une
   souris ou un clavier, l'utilisateur de *The Reactive Square* parle simplement
   dans un microphone et le carré réagit et se transforme en réponse.
-image: /assets/images/events/rsquareall4.png
+image: /assets/images/events/186516bb29eba2f4d476059aea5eed74-1-.png
 ---
