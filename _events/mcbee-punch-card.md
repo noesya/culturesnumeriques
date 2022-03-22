@@ -1,7 +1,7 @@
 ---
 title: McBee Punch Card
 kind: inventions
-year: 1884
+year: 1904
 persons: []
 abstract: Avec ce système ingénieux (datant visiblement du début du XX ème
   siècle), différentes informations pouvaient être codées en perforant des trous
