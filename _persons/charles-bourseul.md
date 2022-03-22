@@ -2,7 +2,7 @@
 title: Charles Bourseul
 first_name: Charles
 last_name: Bourseul
-image: /assets/images/persons/th.jpg
+image: /assets/images/persons/charles-bourseul.jpg
 description: |-
   Charles Bourseul présente en 1854, dans un
   mémoire, une invention : un appareil pour converser
