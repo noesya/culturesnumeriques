@@ -1,5 +1,5 @@
 ---
-title: firme XEROX
+title: Firme XEROX
 first_name: Xerox
 last_name: Corporation
 image: /assets/images/persons/xerox.jpg
