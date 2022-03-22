@@ -2,7 +2,6 @@
 const path = require('path');
 
 module.exports = {
-    mode: 'development',
     watch: false,
     entry: path.join(__dirname, '_js', 'main'),
     output: {
