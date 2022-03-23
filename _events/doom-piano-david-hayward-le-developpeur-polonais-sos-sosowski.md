@@ -1,7 +1,7 @@
 ---
 title: Doom Piano, David Hayward, le développeur polonais Sos Sosowski…
 kind: inventions
-year: 2000
+year: 2013
 abstract: Un groupe de développeurs indépendants qui ont le don de placer des
   ordinateurs dans les endroits les plus étranges ont construit ce qu'ils
   appellent "Doom Piano" - un piano qui, eh bien, joue essentiellement à Doom.
