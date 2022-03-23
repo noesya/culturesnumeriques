@@ -1,7 +1,7 @@
 ---
 title: Active World
 kind: jeux-videos
-year: 2000
+year: 1995
 abstract: Active Worlds (AW) est un univers virtuel en 3D en activité depuis le
   28 juin 1995 c'est l'un des plus anciens métavers d'Internet. Il est développé
   par la société Activeworlds Inc. basée à Las Vegas aux USA. Pour visiter
