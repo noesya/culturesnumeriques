@@ -2,6 +2,8 @@
 title: Processing
 kind: inventions
 year: 2001
+persons:
+  - john-maeda
 abstract: >
   Processing est un carnet de croquis logiciel flexible et un langage permettant
   d'apprendre à coder dans le contexte des arts visuels.
