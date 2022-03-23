@@ -1,7 +1,7 @@
 ---
 title: Kinect
 kind: jeux-videos
-year: 2008
+year: 2010
 description: Kinect, initialement connu sous le nom de code Project Natal1, est
   un périphérique destiné au matériel Microsoft avec la Xbox 360 pour la V1 et
   la Xbox One et Windows depuis la V2 permettant de contrôler une interface sans
