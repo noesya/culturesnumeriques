@@ -1,5 +1,5 @@
 ---
-title: World of WarCraft
+title: WarCraft
 kind: jeux-videos
 year: 1994
 abstract: "-"
@@ -9,5 +9,5 @@ description: "Warcraft est une série de jeux vidéo développée et publiée pa
   de jeu de Dune II en le transposant dans un univers médiéval-fantastique
   s'inspirant notamment de Warhammer et de Donjons et Dragons."
 image: /assets/images/events/wow01.png
-gallery: /assets/images/events/wow2.png
+gallery: ""
 ---
