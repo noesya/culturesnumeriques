@@ -10,4 +10,5 @@ description: La Wii  est une console de jeux de salon du fabricant japonais
   accéléromètre capable de détecter la position, l'orientation et les mouvements
   dans l'espace de la manette.
 image: /assets/images/events/wii.png
+gallery: /assets/images/events/capture-d-e-cran-2022-03-23-a-12.20.43.png
 ---
