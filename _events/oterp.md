@@ -1,11 +1,18 @@
 ---
 title: Oterp
-kind: inventions
-year: 2007
-abstract: Oterp is a mobile phone game project using the geolocalisation to
-  manipulate music in real time depending of the player’s position on Earth.
-  Oterp mix the reality of our everyday environment with a video game. This is a
-  new way to imagine our movements in a society increasingly on the move and
-  dependent of mobile interfaces.
+kind: jeux-videos
+year: 2011
+abstract: Oterp est un projet de jeu sur téléphone mobile utilisant la
+  géolocalisation pour manipuler la musique en temps réel en fonction de la
+  position du joueur sur Terre. Oterp mélange la réalité de notre environnement
+  quotidien avec un jeu vidéo. C'est une nouvelle façon d'imaginer nos
+  déplacements dans une société de plus en plus mobile et dépendante des
+  interfaces mobiles.
+description: Oterp est un projet de jeu sur téléphone mobile utilisant la
+  géolocalisation pour manipuler la musique en temps réel en fonction de la
+  position du joueur sur Terre. Oterp mélange la réalité de notre environnement
+  quotidien avec un jeu vidéo. C'est une nouvelle façon d'imaginer nos
+  déplacements dans une société de plus en plus mobile et dépendante des
+  interfaces mobiles.
 image: /assets/images/events/oterp.jpg
 ---
