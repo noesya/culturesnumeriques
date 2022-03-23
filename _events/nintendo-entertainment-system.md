@@ -9,4 +9,5 @@ description: Le Nintendo Entertainment System, par abréviation NES, également
   Famicom  sortie quelques années avant, en 1983. En Corée du Sud, le NES porta
   le nom de Hyundai Comboy  et en Inde, celui de Tata Famicom.
 image: /assets/images/events/nintendo-entertainment-system.png
+gallery: /assets/images/events/capture-d-e-cran-2022-03-23-a-12.45.32.png
 ---
